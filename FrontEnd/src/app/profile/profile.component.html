@@ -1,0 +1,28 @@
+<mat-card>
+    <mat-card-title>
+        <h4>Profile</h4>
+    </mat-card-title>
+    <form class="example-form">
+        <mat-list>
+            <mat-list-item>Name: {{profile?.name}}</mat-list-item>
+            <mat-list-item>Email: {{profile?.email}}</mat-list-item>
+            <mat-list-item>Description: {{profile?.description}}</mat-list-item>
+            <mat-list-item></mat-list-item>
+        </mat-list>
+    </form>
+    
+</mat-card>
+
+<mat-card>
+        <mat-card-title>
+            <h6>Posts</h6>
+        </mat-card-title>
+        <form class="example-form">
+            <mat-list>
+                <messages></messages>
+            </mat-list>
+        </form>
+        
+    </mat-card>
+
+

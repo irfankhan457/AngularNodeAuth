@@ -1,0 +1,5 @@
+<div *ngFor="let user of appService.users">
+    <mat-card [routerLink]="['/profile', user._id]" 
+    style="cursor : pointer" 
+    (click)="appService.getUserProfile(user._id)">{{user.name}}</mat-card>
+</div>
